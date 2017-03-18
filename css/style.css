@@ -1,0 +1,296 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body
+{
+  font-family: Roboto, sans-serif;
+  background: #ff827c;
+}
+
+.container
+{
+  width: 360px;
+  margin: 15px auto;
+}
+
+.app
+{
+  width: 360px;
+  height: 650px;
+  background: #1e2125;
+  overflow: hidden;
+  padding: 10px;
+  padding-top: 0;
+
+  box-shadow: 0 35px 55px -20px rgba(0,0,0,0.4);
+}
+
+.header
+{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header > div
+{
+  position: absolute;
+  top: 0;
+  color: rgba(255,255,255,0.45);
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.fat-burning
+{
+  left: 35px;
+}
+
+.user-attendance
+{
+  right: 35px;
+}
+
+img.user-img
+{
+  width: 90px;
+  height: 90px;
+  border-radius: 100%; 
+  border: 4px solid #f6554d;
+}
+
+.header > div > span.title
+{
+  display: block;
+}
+
+.header > div > span.result span
+{
+  display: block;
+}
+
+.header > div > span.result .num
+{
+  font-family: Queen of Camelot Regular;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.header > div > span.result .unit
+{
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+
+.body
+{
+  margin-top: 20px;
+}
+
+.body .attendance .title
+{
+  margin-left: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+}
+
+.body .attendance ul
+{
+  margin-top: 15px;
+}
+
+.body .attendance ul li
+{
+  float: left;
+  list-style: none;
+  width: 14.28571428571429%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(255,255,255,0.2);
+}
+
+.body .attendance ul li span.date
+{
+  display: block;
+  color: rgba(255,255,255,0.4);
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.body .attendance ul li span.circle
+{
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 100%;
+  border: 5px solid transparent;
+}
+
+.body .attendance ul li span.circle.absent
+{
+  border: 5px solid #554f52;
+}
+
+.body .attendance ul li span.circle.present
+{
+  border: 5px solid #f6554d;
+}
+
+.body .attendance ul li span.circle.off
+{
+  background: #554f52;
+  border: 5px solid #554f52;
+}
+
+.body .attendance ul li span.circle.present + span
+{
+  color: #f6554d;
+}
+
+.body .attendance:after 
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.body .stats
+{
+  position: relative;
+  top: 45px;
+  height: 60px;
+}
+
+.body .stats .monthly-stats span
+{
+  position: absolute;
+}
+
+.body .stats .monthly-stats .title
+{
+  left: 12px;
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.body .stats .monthly-stats .title .caption
+{
+  padding-top: 5px;
+  color: rgba(255,255,255,0.25);
+}
+
+.body .stats .monthly-stats .rank
+{
+  right: 12px;
+  font-family: Queen of Camelot Regular;
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin-top: -7px;
+}
+
+.body .stats .monthly-stats .rank .caption
+{
+  font-family: Roboto, sans-serif;
+  color: rgba(255,255,255,0.25);
+  font-size: 12px;
+  letter-spacing: 0;
+  right: 0;
+  margin-top: -5px;
+}
+
+.body .stats.highlight
+{
+  background: #f6554d;
+  padding-top: 20px;
+  margin-top: -10px;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  box-shadow: inset 0 15px 25px -5px rgba(0,0,0,0.25),
+              inset 0 -15px 25px -5px rgba(0,0,0,0.1);
+}
+
+.body .stats.highlight *
+{
+  color: #fff !important;
+}
+
+.graph ul
+{
+  margin-top: 200px;
+}
+
+.graph ul li
+{
+  text-align: center;
+  float: left;
+  list-style: none;
+  width: 16.66666666666667%;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+
+.graph ul li:before
+{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 130px;
+  display: inline-block;
+  background: rgba(255,255,255,0.7);
+  margin-top: -135px;
+  margin-left: 6px;
+  box-shadow: inset 0 20px 15px -10px #1e2125;
+}
+
+.graph ul li:after
+{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(246,85,77,0.9);
+  border-radius: 100%;
+  border: 3px solid rgba(255,255,255,0.9);
+  margin-left: -16px;
+  box-shadow: 0 0 0 5px rgba(255,255,255,0.15),
+              0 0 0 10px rgba(255,255,255,0.1),
+              1.5px 1.5px 2px 10px rgba(0,0,0,0.8);
+}
+
+.graph-knob-mt-100:after
+{
+  margin-top: -100px;
+}
+
+.graph-knob-mt-110:after
+{
+  margin-top: -110px;
+}
+
+.graph-knob-mt-70:after
+{
+  margin-top: -70px;
+}
+
+.graph-knob-mt-60:after
+{
+  margin-top: -95px;
+}
+
+.graph-knob-mt-50:after
+{
+  margin-top: -50px;
+}
